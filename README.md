@@ -1,2 +1,2 @@
 # Halite-Bot
-Halite competition on Feb 12,2017. Rank 23 (Diamond Tier) 
+Halite competition ending on Feb 12,2017. Finished as rank 23 out of 1592 (Diamond Tier) 
