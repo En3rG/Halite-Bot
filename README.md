@@ -13,7 +13,12 @@ I had this commented out with my final submission since it was timing out during
 
 * Attack/Defend
 
-The attack portion is base on the neutrals that are in the front line.  These are squares that have 0 strength and is between my squares and the enemies.  It iterates through each of the neutral squares in front line and numbers my squares adjacent to it, up to whatever the variable is set to.  My final submission was set to 6.  Basically, my square right next to the neutral square is numbered as '1', the ones next to this square is numbered '2' and so on up to 6.  This makes each of the numbered squares to flow towards the lower number all the way to the original neutral front line square.  This can cause a build up, since every one of them are just going into a single square, so I added an option where a specified number will be allowed to create another opening.  In my final submission, this number was set to 3.  So if my square that is numbered '3' met the required strength and is next to a neutral, it'll take that neutral square and basically make that a new opening towards the enemy.  This help prevent some build up.
+The attack portion is base on the neutrals that are in the front line.  These are squares that have 0 strength and is between my squares and the enemies.  It iterates through each of the neutral squares in front line and numbers my squares adjacent to it, up to whatever the variable is set to.  My final submission was set to 6.  Basically, my square right next to the neutral square is numbered as '1', the ones next to this square is numbered '2' and so on up to 6.  This makes each of the numbered squares to flow towards the lower number all the way to the original neutral front line square. ![Alt text](https://cloud.githubusercontent.com/assets/24849446/23225151/e74bd6b6-f8fe-11e6-8b6e-2a5135c7f37d.jpg "Attacking")
+
+This can cause a build up, since every one of them are just going into a single square, so I added an option where a specified number will be allowed to create another opening.  In my final submission, this number was set to 3.  So if my square that is numbered '3' met the required strength and is next to a neutral, it'll take that neutral square and basically make that a new opening towards the enemy.  This help prevent some build up.
+
+The defend part is similar to attack, but instead of looking for neutrals with 0 strength, it looks for neutrals that is close to an enemy.  For my final submission, this was set to 2.  If an enemy is detected 2 squares away, then these squares will also be numbered, similar to how the attack squares are numbered.  Then it will power up until it reach the specified strength given.
+
 * Expand
 * Evade
 * Middle squares
