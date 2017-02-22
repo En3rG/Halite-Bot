@@ -41,6 +41,9 @@ Manage prevents squares from going over 255.  If it is, it temporarily sets its 
 
 # Improvements to be made
 *Need to update defending.  With defending, it also prevents attacking (similar to NAP) but it currently just always go to the right.  Once it reaches the desired strength, it wont go towards the enemy but it'll always just go to the right.  This should go to the direction with higher production area.
+
 *Need to update middle squares directions.  Currently middle squares just go to the nearest neutral square, if no enemy is detected.  It should also go to the direction of higher production squares.
+
 *Need to update evading.  Some scenarios still causes overkill/splash damage.  For example, if an enemy square has neutral front line squares in both east and west with my squares next to it.  If the enemy didnt move and both my squares went towards the neutral front line squares, then both of them will be damaged by the strength of the enemy.
+
 *Need to update attacking.  It seems that against the top players, even if we started with the same production/territory, they seem to always win.  Maybe since my attack has a funneling formation where as others has more of a uniform attack towards the enemy. 
