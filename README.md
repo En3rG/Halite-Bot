@@ -33,14 +33,14 @@ The evade part takes squares numbered '1' and '2' into account.  This basically 
 
 * Middle squares
 
-The remaining squares that are not attacking nor expanding, will be the middle squares.  These squares will check if there is an enemy in its north, east, south or west.  If no enemy is detected, then it'll just go towards the closest neutral.
+The remaining squares that are not attacking nor expanding, will be the middle squares.  Once it hits the desired strength, specified under paramaters, these squares will check if there is an enemy in its north, east, south or west.  If no enemy is detected, then it'll just go towards the closest neutral.
 
 * Manage
 
 Manage prevents squares from going over 255.  If it is, it temporarily sets its direction to STILL, recursively check other squares possibly going to that position and setting those to STILL as well.  All the squares that are STILL will then be analyzed to see if their positions can be swapped.  If a stronger square that is STILL, previously wanted to go to a weaker square that is also STILL, it'll change both its direction and swap their positions.
 
 # Improvements to be made
-*With defending, it also prevents attacking (similar to NAP) but it currently just always go to the right.  Once it reaches the desired strength, it wont go towards the enemy but it'll always just go to the right.  This should go to the direction with higher production area.
-*Middle squares just go to the nearest neutral square.  It should also go to the direction of higher production squares.
+*Need to update defending.  With defending, it also prevents attacking (similar to NAP) but it currently just always go to the right.  Once it reaches the desired strength, it wont go towards the enemy but it'll always just go to the right.  This should go to the direction with higher production area.
+*Need to update middle squares directions.  Currently middle squares just go to the nearest neutral square, if no enemy is detected.  It should also go to the direction of higher production squares.
 *Need to update evading.  Some scenarios still causes overkill/splash damage.  For example, if an enemy square has neutral front line squares in both east and west with my squares next to it.  If the enemy didnt move and both my squares went towards the neutral front line squares, then both of them will be damaged by the strength of the enemy.
-*Update attack style.  It seems that against the top players, even if we started with the same production/territory, they seem to always win.  Maybe since my attack has a funneling formation where as others has more of a uniform attack towards the enemy. 
+*Need to update attacking.  It seems that against the top players, even if we started with the same production/territory, they seem to always win.  Maybe since my attack has a funneling formation where as others has more of a uniform attack towards the enemy. 
